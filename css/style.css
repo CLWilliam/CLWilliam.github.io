@@ -1,0 +1,114 @@
+html, body {
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+#site {
+    margin: 0px 0px 0px 0px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 2fr 10fr 1fr;
+    grid-template-areas:    "title  title"
+                            "nav    main"
+                            "footer footer";
+}
+@media screen and (max-width: 400px) {
+    #site {
+        margin: 0px 0px 0px 0px;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        grid-template-rows: 1fr 2fr 10fr 1fr;
+        grid-template-areas:    "nav    nav"
+                                "title  title"
+                                "main   main"
+                                "footer footer";
+    }
+
+  }
+    
+nav {
+    background-color: chartreuse;
+    grid-area: nav;
+    padding-top: 40px;
+}
+
+main {
+    background-color: coral;
+    grid-area: main;
+}
+
+footer {
+    background-color: brown;
+    grid-area: footer;
+    text-align: center;
+}
+
+main, footer {
+    padding: 20px 20px 20px 20px;
+}
+
+img.avatar {
+    border-radius: 50%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 20%;
+}
+
+nav > a {
+    padding: 10px 0px 10px 0px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+}
+
+nav > a:hover {
+    background-color: bisque;
+}
+
+@media screen and (max-width: 400px) {
+    img.avatar {
+        border-radius: 50%;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 10%;
+    }
+
+    nav > a {
+        padding: 10px 0px 10px 0px;
+        display: inline-block;
+        float: right;
+        text-align: center;
+        width: 10%;
+        font-weight: 600;
+    }
+  }
+
+#title {
+    background-color: darkgoldenrod;
+    grid-area: title;
+    text-align: center;
+}
+
+#title > h1 {
+    display: inline-block;
+    padding-bottom: 20px;
+    margin: 50px 0px 20px 0px;
+    font-family: 'Libre Baskerville', serif;    
+    font-weight: 700;
+    border-bottom: 5px solid rgb(41, 41, 41);
+}
+
+#title > h2 {
+    display: block;
+    margin: 20px 0px 50px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
