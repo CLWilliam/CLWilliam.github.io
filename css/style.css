@@ -42,12 +42,18 @@ main > div.main-block {
 
 main > div.main-block > p {
     padding-left: 1rem;
+    text-align: justify;
 }
 
 main > div.main-block > span {
     font-family: 'Montserrat', sans-serif;    
     font-weight: 200;
-    font-size: 1.5rem;
+    font-size: 1rem;
+
+}
+
+b {  
+    font-weight: 600;
 }
 
 main > h1 {
