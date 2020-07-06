@@ -133,6 +133,8 @@ nav > a:hover {
 }
 
 code {
+    padding-top: 2%;
     padding-left: 5%;
+    padding-bottom: 2%;
     display: block;
 }
