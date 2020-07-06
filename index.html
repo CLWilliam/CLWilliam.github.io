@@ -22,6 +22,7 @@
     <nav>
       <img class="avatar" src="img/avatar.jpg">
       <a href="#title">About</a>
+      <a href="#blog">Blog Posts</a>
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
       <a href="#training">Training</a>
@@ -36,6 +37,51 @@
   
 
   <main>
+    <h1 id="blog">Blog Posts</h1>
+
+    <div class="main-block">
+      <h2>Exploring CCS3 Improvements</h2>
+      <p>
+        As new features in CSS3 improve a more clean HTML structure
+        and introduces some new style controls without the need of extensive CSS framworks nor JS libraries,
+        I  wanted to build a small project to try out basic front-end web development without bootstrap or MuiCSS.
+
+      <span>CSS Grid</span>
+        My first feature to explore is the CSS grid system.
+        This system makes it very easy and understandable to divide the screen up in to different areas
+        and makes actual whitespace quite possible. No more endless structuring divs and 12 column systems.
+        The grid system makes it quite easy to switch designs for different layout, without running screaming towards bootstrap.
+        <br><br>
+      <code>
+        #site {<br>
+        margin: 0px 0px 0px 0px;<br>
+        height: 100%;<br>
+        display: grid;<br>
+        grid-template-columns: 330px 8fr;<br>
+        grid-template-rows: 2fr 20fr 1fr;<br>
+        grid-template-areas:    "nav    title"<br>
+                                "nav    main"<br>
+                                "nav    footer";<br>
+        }
+      </code>
+      <br><br><br>
+      <span>Smooth transitions</span>
+        Smooth transitions were something I tried to implement with jquery when not going full-on bootstrap.
+        This one has been the easiest and the most compact solution to this problem. Where the overflow-y property is supported and part of CSS3,
+        the scroll-behaviour is still - at the time of writing - indicated as draft and not yet supported in Safari.
+        Not fully understanding the need for both properties (it doesn't work without overflow-y), I still need to dive into some docs to fully understand it.
+        <br><br>
+      <code>
+        #site {<br>
+          ... <br>
+              scroll-behavior: smooth;<br>
+              overflow-y: scroll;<br>
+          }
+      </code>
+    </p>
+    </div>
+
+
     <h1 id="experience">Experience</h1>
 
     <div class="main-block">
