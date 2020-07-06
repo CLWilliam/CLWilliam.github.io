@@ -1,5 +1,5 @@
-/*    e8e9eb      */
-
+/*    layout for min-width of 1200 px   */
+/* Content box color: #E0DFD5 */
 html, body {
     height: 100%;
     margin: 0px 0px 0px 0px;
@@ -12,16 +12,20 @@ html, body {
     margin: 0px 0px 0px 0px;
     height: 100%;
     display: grid;
-    grid-template-columns: 2fr 8fr;
+    grid-template-columns: 330px 8fr;
     grid-template-rows: 2fr 20fr 1fr;
-    grid-template-areas:    "img    title"
+    grid-template-areas:    "nav    title"
                             "nav    main"
                             "nav    footer";
+    scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 
 nav {
     background-color: #313638;
     grid-area: nav;
+    position: fixed;
+    top: 5%;
 }
 
 main {
@@ -37,7 +41,7 @@ main > div.main-block {
     font-family: 'Montserrat', sans-serif;    
     font-weight: 300;
     font-size: 1rem;
-    background-color: #E0DFD5;
+    background-color: #E0DFD5 ;
 }
 
 main > div.main-block > p {
@@ -62,7 +66,7 @@ main > h1 {
     margin-left: 1em;
     font-family: 'Montserrat', sans-serif;    
     font-weight: 700;
-    border-bottom: 5px solid #F06543;
+    border-bottom: 10px solid #F06543;
     font-size: 2rem;
 }
 
@@ -78,25 +82,25 @@ main, footer {
 }
 
 img.avatar {
-    grid-area: img;
+    /* grid-area: img; */
     border-radius: 50%;
     border-color: #F09D51;
     border-style: solid;
-    border-width: 5px;
-    width: 80%;
-    margin-top: 10%;
-    margin-left: 5%;
+    border-width: 6px;
+    width: 260px;
+    margin-left: 29px;
     margin-bottom: 5%;
-    margin-right: 5%;
+    margin-right: 29px;
 }
 
 nav > a {
-    padding: 1rem 0 1rem 0;
+    padding: 1.5rem 0 1rem 0;
     display: block;
     text-align: center;
-    width: 100%;
+    width: 330px;
     font-weight: 600;
     color: #F09D51;
+    text-decoration: none;
 }
 
 nav > a:hover {
@@ -116,7 +120,7 @@ nav > a:hover {
     margin: 50px 0px 20px 0px;
     font-family: 'Libre Baskerville', serif;    
     font-weight: 700;
-    border-bottom: 5px solid #5E1908;
+    border-bottom: 15px solid #F06543;
     font-size: 3rem;
 }
 
